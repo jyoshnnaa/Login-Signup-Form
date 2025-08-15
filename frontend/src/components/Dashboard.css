@@ -1,0 +1,25 @@
+/* src/components/Dashboard.css */
+.dashboard-container {
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.profile-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-icon button {
+  padding: 5px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

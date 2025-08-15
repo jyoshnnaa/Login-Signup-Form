@@ -1,0 +1,132 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 360px;
+  text-align: center;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.tab-buttons button.active {
+  background:#6C27F5;
+  color: #fff;
+}
+
+.tab-buttons button:not(.active):hover {
+  background: #dcdcdc;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus {
+  border-color: #6C27F5;
+  box-shadow: 0 0 5px#6C27F5;
+  outline: none;
+}
+
+.form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background:#6C27F5;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #6C27F5;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+/* Password toggle */
+.password-wrapper {
+  position: relative;
+}
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color:#6C27F5;
+}
+
+/* Switch text buttons */
+.switch-text {
+  margin-top: 10px;
+}
+.switch-btn {
+  background: none;
+  border: none;
+  color: #6C27F5;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Dashboard profile */
+.dashboard-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logout-btn {
+  padding: 5px 10px;
+  background-color: #280A3E;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
