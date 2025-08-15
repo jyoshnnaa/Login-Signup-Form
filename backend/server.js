@@ -12,10 +12,7 @@ app.use(express.json());
 
 // CORS - allow any frontend port dynamically
 app.use(cors({
-  origin: ['http://localhost:5173', 
-    'http://localhost:5174', 
-    'http://localhost:5175',
-  'https://login-signup-form-frontend.onrender.com'
+  origin: ['https://login-signup-form-frontend.onrender.com'
 ],
   credentials: true,
 }));
@@ -23,7 +20,9 @@ app.use(cors({
 // Routes
 app.use('/api/auth', authRoutes);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
 async function start() {
   try {
