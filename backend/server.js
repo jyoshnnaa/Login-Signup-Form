@@ -12,7 +12,11 @@ app.use(express.json());
 
 // CORS - allow any frontend port dynamically
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175'],
+  origin: ['http://localhost:5173', 
+    'http://localhost:5174', 
+    'http://localhost:5175',
+  'https://login-signup-form-frontend.onrender.com'
+],
   credentials: true,
 }));
 
